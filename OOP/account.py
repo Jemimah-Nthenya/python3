@@ -56,14 +56,3 @@ class Account:
         """Close the account."""
         print(f"Account {self.account_number} closed. Thank you!")
 
-if __name__ == "__main__":
-    account1 = Account("BA1234", 1000)
-    account1.deposit(500)
-    account1.withdraw(200)
-    account1.view_account_details()
-
-    account2 = Account("BA5678", 2000)
-    account1.transfer_funds(account2, 300)
-    account2.view_account_details()
-
-    account1.close_account()
